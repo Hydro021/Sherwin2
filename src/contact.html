@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<style>
+    /* Custom CSS for contact page */
+    body {
+      background-color: #f0f2f5;
+    }
+    .form-control {
+      background-color: white;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: #1877f2;
+      box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+    }
+    .btn-send {
+      background-color: #1877f2;
+    }
+    .btn-send:hover {
+      background-color: #166fe5;
+    }
+  </style>
+<body>
+ <nav>
+  <ul class="inline-flex items-baseline space-x-4 p-7">
+    <li><a href="/src/home.html">Home</a></li>
+    <li><a href="/src/category.html">Category</a></li>
+    <li><a href="/src/contact.html">Contact</a></li>
+    <li><a href="/src/product.html">Products</a></li>
+  </ul>
+ </nav>
+ <div class="container mx-auto mt-8 p-6 bg-white shadow-lg rounded-lg">
+    <h1 class="text-4xl font-semibold  mb-6 -inset-x-28">Get In Touch</h1>
+    <form>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-1xl">
+        <div class="form-control">
+          <label for="name" class="block mb-2">Your Name (required)</label>
+          <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Enter Your Name">
+        </div>
+        <div class="form-control">
+          <label for="email" class="block mb-2">Your Email (required)</label>
+          <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Enter Your Email">
+        </div>
+        <div>
+        <div class="form-control">
+          <label for="subject" class="block mb-2">Subject</label>
+          <input type="text" id="subject" class="w-full p-2 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Enter Your Subject">
+        </div>
+        <div class="form-control">
+          <label for="message" class="block mb-2">Message</label>
+          <textarea id="message" class="w-full p-2 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500 resize-none" placeholder="Enter Your Message"></textarea>
+        </div>
+    </div>
+      </div>
+      <div class="mt-6 flex">
+        <button type="submit" class="btn-send text-white py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">Send Message</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
